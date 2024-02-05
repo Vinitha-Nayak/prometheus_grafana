@@ -1,0 +1,18 @@
+# my global config
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "Jenkins"
+    static_configs:
+      - targets: ["3.22.242.241:9100"]
+
+  - job_name: "Jenkins-1"
+    static_configs:
+      - targets: ["172.31.15.234:9100"]
+
+
+  - job_name: "Jenkins-2"
+    static_configs:
+      - targets: ["172.31.7.19:9100"]
+
